@@ -15,16 +15,14 @@ const sum = function (array) {
     return res;
 };
 
-const multiply = function (array) {
-    let res = array.reduce((total, a) => (total * a), 1);
-    console.log(res);
-    return res;
+const multiply = function (a, b) {
+    console.log(a * b);
+    return a * b;
 };
 
 const divide = function (a, b) {
-    let res = a / b;
-    console.log(res);
-    return res;
+    console.log(a / b);
+    return a / b;
 }
 
 const power = function (base, exponent) {
@@ -56,8 +54,7 @@ const operate = function (operand1, operand2, operator) {
         subtract(operand1, operand2);
     }
     else if (operator === "*") {
-        const array = [operand1, operand2]
-        multiply(array);
+        multiply(operand1, operand2);
     }
     else if (operator === "/") {
         divide(operand1, operand2);
@@ -80,5 +77,5 @@ numberButtons.forEach(function (currentBtn) {
 // testing area
 operand1 = 30;
 operand2 = 5;
-operator = "/";
+operator = "*";
 operate(operand1, operand2, operator);
