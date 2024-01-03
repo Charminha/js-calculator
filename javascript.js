@@ -61,6 +61,19 @@ const operate = function (operand1, operand2, operator) {
     }
 };
 
+// show value of current button on display
+
+let displayValue;
+const calculatorDisplay = document.querySelector('.calculator-display');
+
+
+const updateDisplay = function(displayValue){
+
+    calculatorDisplay.textContent = displayValue;
+
+};
+
+
 
 
 // get parameter input for operations functions from number buttons
@@ -69,6 +82,10 @@ const operate = function (operand1, operand2, operator) {
 const numberButtons = document.querySelectorAll('.number')
 numberButtons.forEach(function (currentBtn) {
     currentBtn.addEventListener('click', () => {
+        displayValue = Number(currentBtn.textContent);
+        console.log("display value " + displayValue);
+        calculatorDisplay.textContent = String(displayValue);
+
         console.log(Number(currentBtn.textContent));
         return Number(currentBtn.textContent);
     });

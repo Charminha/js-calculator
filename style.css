@@ -23,6 +23,7 @@ h1 {
 
 .calculator-display {
     background-color: rgb(38, 38, 38);
+    color: whitesmoke;
     width: 350px;
     height: 90px;
     border-radius: 3px;
