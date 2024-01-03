@@ -16,7 +16,7 @@ h1 {
     justify-content: space-between;
     background-color: rgb(113, 95, 82);
     width: 350px;
-    height: 525px;
+    height: 540px;
     border-radius: 8px;
     padding: 12px;
 }
@@ -26,6 +26,18 @@ h1 {
     width: 350px;
     height: 90px;
     border-radius: 3px;
+}
+
+.middle-container {
+    display: flex;
+    align-self: center;
+    background-color: rgb(53, 43, 37);
+    width: 342px;
+    height: 105px;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 3px;
+    flex: 1;
 }
 
 .lower-container {
@@ -51,6 +63,21 @@ h1 {
     margin-left: 5px;
     flex-direction: column;
     flex: 1;
+}
+
+.middle-container button {
+    margin: 4px;
+    flex: 1;
+    height: 75px;
+    color: whitesmoke;
+}
+
+.del-ac {
+    background-color: rgb(193, 26, 26);
+}
+
+.operator {
+    background-color: rgb(50, 78, 164);
 }
 
 .operations-buttons button {
