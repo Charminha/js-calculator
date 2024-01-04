@@ -99,6 +99,7 @@ operationsButtons.forEach(function (currentBtn) {
         console.log("display value " + displayValue);
         calculatorDisplay.textContent = String(displayValue);
         console.log(currentBtn.textContent);
+        operator = currentBtn.textContent;
         return currentBtn.textContent;
     });
 });
