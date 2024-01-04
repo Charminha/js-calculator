@@ -67,11 +67,11 @@ let displayValue;
 const calculatorDisplay = document.querySelector('.calculator-display');
 
 
-const updateDisplay = function(displayValue){
+// const updateDisplay = function(displayValue){
 
-    calculatorDisplay.textContent = displayValue;
+//     calculatorDisplay.textContent = displayValue;
 
-};
+// };
 
 
 
@@ -90,6 +90,19 @@ numberButtons.forEach(function (currentBtn) {
         return Number(currentBtn.textContent);
     });
 });
+
+// each operations button returns its value
+const operationsButtons = document.querySelectorAll('.operation')
+operationsButtons.forEach(function (currentBtn) {
+    currentBtn.addEventListener('click', () => {
+        displayValue = currentBtn.textContent;
+        console.log("display value " + displayValue);
+        calculatorDisplay.textContent = String(displayValue);
+        console.log(currentBtn.textContent);
+        return currentBtn.textContent;
+    });
+});
+
 
 // testing area
 operand1 = 30;
